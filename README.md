@@ -27,3 +27,16 @@ Para correr el API ejecutamos el siguiente comando en la carpeta raiz
 ~~~
 $ node index
 ~~~
+
+#Ahora construiremos la imagen de Docker
+Para crear la imagen de docker utilizaremos el comando
+~~~
+$ docker build -t "nombre_de_imagen" .
+~~~
+Es importante incluir el . despues de un espacio al final de comando ya que definimos que el dockerfile se encuentra en la raiz
+
+Para correr nuestra imagen docker en el puerto indicado haremos lo siguiente 
+~~~
+$ docker run -p 3300:3300 "nombre_de_imagen"
+~~~
+Con esto definimos que al correr el docker se exponga en el puerto deseado
