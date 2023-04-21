@@ -23,6 +23,11 @@ $ npm install --save pg@8.10.0
 $ npm install --save pg-hstore@2.3.3
 $ npm install --save dotenv@8.0.0
 ~~~
+Antes de ejecutar deben tener su base de datos ya sea local o nube y ejecutar el siguiente comando para migrar hacia su base de datos los schemas
+~~~
+$ sequelize db:migrate
+~~~
+
 Para correr el API ejecutamos el siguiente comando en la carpeta raiz
 ~~~
 $ node index
